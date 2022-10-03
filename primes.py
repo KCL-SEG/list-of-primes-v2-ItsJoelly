@@ -9,8 +9,7 @@ def primes(number_of_primes):
             if checkPrime(counter):
                 list.append(counter)
             counter +=1
-
-        print(list)
+        return list
     except ValueError as ve:
         print("The value you entered is not a positive number!")
 
@@ -22,5 +21,3 @@ def checkPrime(num):
             if (num%i == 0):
                 return False
     return True
-
-primes(7)
